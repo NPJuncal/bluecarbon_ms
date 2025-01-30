@@ -368,19 +368,13 @@ Carbon Stocks and Sequestration Rates From Soil Core Data</h1>
 <p>Nerea Piñeiro-Juncal, University of Vigo, Vigo, Spain. Email: <a href="mailto:np.juncal@gmail.com" class="email">np.juncal@gmail.com</a></p>
 <div id="summary" class="section level1">
 <h1>Summary</h1>
-<p>In the last decade, blue carbon projects and publications about blue
-carbon research have grown exponentially. Although there are many soil
-sampling strategies, estimation methodologies are fairly homogeneous.
-However, there is no R library with functions specifically for blue
-carbon estimations.<em>BlueCarbon</em> facilitate the estimation of
-organic carbon stocks and sequestration rates from soil/sediment cores
-from blue carbon ecosystems. It contains seven main functions to
-estimate the compaction of cores, mathematically correct core
-compaction, estimate sample thickness, estimate organic carbon content
-from organic matter content, estimate organic carbon stocks and
-sequestration rates and visualize the error of stock extrapolation.</p>
-<p><em>Keywords</em>: R package, coastal wetlands, carbon stocks,
-sequestration rates, reproducibility</p>
+<p><em><code>BlueCarbon</code></em> facilitate the estimation of organic
+carbon stocks and sequestration rates from soil/sediment cores from blue
+carbon ecosystems. It contains seven main functions to estimate the
+compaction of cores, mathematically correct core compaction, estimate
+sample thickness, estimate organic carbon content from organic matter
+content, estimate organic carbon stocks and sequestration rates and
+visualize the error of stock extrapolation.</p>
 </div>
 <div id="statement-of-need" class="section level1">
 <h1>Statement of Need</h1>
@@ -459,20 +453,13 @@ carbon value for each organic matter value provided. If there is a
 organic carbon value for that sample it return the same value, else,
 generates a model for that site, else, model for specie, else, model for
 that ecosystem. If a model can not be created due to the low number of
-samples (&lt;10) it uses the equations in Fourqurean et al. 2012 for
-seagrasses, Maxwell et al. 2023 for salt marshes and Piñeiro-Juncal in
-prepp for mangroves to estimate the organic carbon. It is unlikely, but
-possible, that a model will predict a higher organic carbon than organic
-matter content. This is not possible in nature. If this is the case the
-function will give a warning and it is recommended to discard that
-model.</p>
-<p>Fourqureanet al. (2012) Seagrass ecosystems as a globally significant
-carbon stock. Nat. Geosci.5, 505–509. <a href="https://doi.org/10.1038/ngeo1477" class="uri">https://doi.org/10.1038/ngeo1477</a></p>
-<p>Maxwell et al. (2023) Global dataset of soil organic carbon in tidal
-marshes.Sci.Data 10, 1–14.<a href="https://doi.org/10.1038/s41597-023-02633-x" class="uri">https://doi.org/10.1038/s41597-023-02633-x</a></p>
-<p>Piñeiro-Juncal et al. (in prepp) Soil organic carbon preservation and
-decay trends in tidal marsh, mangrove and seagrass blue carbon
-ecosystems.</p>
+samples (&lt;10) it uses the equations in <code>Fourqurean:2012</code>
+for seagrasses, <code>Maxwell:2023</code> for salt marshes and
+Piñeiro-Juncal in prepp for mangroves to estimate the organic carbon. It
+is unlikely, but possible, that a model will predict a higher organic
+carbon than organic matter content. This is not possible in nature. If
+this is the case the function will give a warning and it is recommended
+to discard that model.</p>
 </div>
 <div id="estimate_h---sample-thickness-estimation" class="section level4">
 <h4><strong><em>estimate_h</em></strong> <strong>- Sample thickness
@@ -534,6 +521,13 @@ tutorials</a></p>
 </div>
 <div id="key-references" class="section level1">
 <h1>Key References</h1>
+<p>Fourqureanet al. (2012) Seagrass ecosystems as a globally significant
+carbon stock. Nat. Geosci.5, 505–509. <a href="https://doi.org/10.1038/ngeo1477" class="uri">https://doi.org/10.1038/ngeo1477</a></p>
+<p>Maxwell et al. (2023) Global dataset of soil organic carbon in tidal
+marshes.Sci.Data 10, 1–14.<a href="https://doi.org/10.1038/s41597-023-02633-x" class="uri">https://doi.org/10.1038/s41597-023-02633-x</a></p>
+<p>Piñeiro-Juncal et al. (in prepp) Soil organic carbon preservation and
+decay trends in tidal marsh, mangrove and seagrass blue carbon
+ecosystems.</p>
 </div>
 <div id="acknowledgements" class="section level1">
 <h1>Acknowledgements</h1>
