@@ -37,8 +37,6 @@ affiliations:
     name: Departamento de Biología Vegetal y Ecología, Universidad de Sevilla, Spain
   - index: 6
     name: Estación Biológica de Doñana, Consejo Superior de Investigaciones Científicas, Spain
-
-
 ---
 
 Correspondence:
@@ -47,9 +45,7 @@ Nerea Piñeiro-Juncal, University of Vigo, Vigo, Spain. Email: [np.juncal\@gmail
 
 # Summary
 
-Need for this: blue carbon papapapa.... many sources...
-
-*BlueCarbon* facilitate the estimation of organic carbon stocks and sequestration rates from soil/sediment cores from blue carbon ecosystems. It contains seven main functions to estimate the compaction of cores, mathematically correct core compaction, estimate sample thickness, estimate organic carbon content from organic matter content, estimate organic carbon stocks and sequestration rates and visualize the error of stock extrapolation.
+In the last decade, blue carbon projects and publications about blue carbon research have grown exponentially. Although there are many soil sampling strategies, estimation methodologies are fairly homogeneous. However, there is no R library with functions specifically for blue carbon estimations.*BlueCarbon* facilitate the estimation of organic carbon stocks and sequestration rates from soil/sediment cores from blue carbon ecosystems. It contains seven main functions to estimate the compaction of cores, mathematically correct core compaction, estimate sample thickness, estimate organic carbon content from organic matter content, estimate organic carbon stocks and sequestration rates and visualize the error of stock extrapolation.
 
 *Keywords*: R package, coastal wetlands, carbon stocks, sequestration rates, reproducibility
 
@@ -68,7 +64,7 @@ opts_chunk$set(fig.path = "output/figures/", dpi = 300)
 
 # Statement of Need
 
-Coastal blue carbon ecosystems have earn a large attention for their role as sinks of organic carbon. In the last decade, publications about blue carbon research have grown exponentially, including many studies reporting soil organic carbon stocks and sequestration rates (). Although there are many soil sampling estrategies, estimation methodologies are fairly homogeneous, following the protocol published by the Blue Carbon initiative (). However, and although many blue carbon researchers work in R and it is becoming more comon to publish the code used, there is no R library with functions especifically for blue carbon estimations. This library aims to standardize and automate the main estimations to get soil/sediment blue carbon stocks and sequestration rates from raw field and laboratory data.
+Coastal blue carbon ecosystems have earn a large attention for their role as sinks of organic carbon. In the last decade, publications about blue carbon research have grown exponentially, including many studies reporting soil organic carbon stocks and sequestration rates (). Although there are many soil sampling strategies, estimation methodologies are fairly homogeneous, following the protocol published by the Blue Carbon initiative (). However, and although many blue carbon researchers work in R and it is becoming more comon to publish the code used, there is no R library with functions especifically for blue carbon estimations. This library aims to standardize and automate the main estimations to get soil/sediment blue carbon stocks and sequestration rates from raw field and laboratory data.
 
 # Desing
 
@@ -129,8 +125,6 @@ Estimate the average organic carbon sequestration rate to the soil in a indicate
 The library is available xxxx. [Browse the source core](https://github.com/EcologyR/BlueCarbon/)
 
 [Library and tutorials](https://ecologyr.github.io/BlueCarbon/)
-
-
 
 # Key References
 
