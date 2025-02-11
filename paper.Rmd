@@ -6,7 +6,7 @@ tags:
   - ecology
   - climate change
 
-author:
+authors:
   - name: Nerea Piñeiro-Juncal
     orcid: 0000-0003-3767-1812
     affiliation: 1
@@ -25,28 +25,28 @@ author:
 
 
 affiliations:
-  
   - index: 1
     name: Departamento de Xeocencias Mariñas e Ordenación do Territorio, Facultade de Ciencias do Mar, Campus Lagoas Marcosende, Universidad de Vigo, Vigo, Spain 
   - index: 2
     name: Universidad de Alcalá, Grupo de Ecología Forestal y Restauración (FORECO), Departamento de Ciencias de la Vida, Spain
   - index: 3
-    name:  
+    name: Affil3 
   - index: 4
-    name: 
+    name: Affil4
   - index: 5
     name: Departamento de Biología Vegetal y Ecología, Universidad de Sevilla, Spain
 
 
 date: 25 February 2025
+year: 2025
 # bibliography: paper.bib
 csl: apa.csl
 
-output: github_document
+# output: github_document
 
-# output: rticles::joss_article
-# journal: JOSS
-# citation_author: Piñeiro-Juncal et. al.
+output: rticles::joss_article
+journal: JOSS
+citation_author: Piñeiro-Juncal et. al.
 
 ---
 
