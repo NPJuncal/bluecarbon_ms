@@ -26,7 +26,7 @@ author:
 affiliations:
   
   - index: 1
-    name: Departamento de Xeocencias Mariñas e Ordenación do Territorio, Facultade de Ciencias do Mar, Campus Lagoas Marcosende, Universidad de Vigo, Vigo, Spain 
+    name: Centro de Investigacions Mariñas da Universidade de Vigo. Departamento de Xeocencias Mariñas e Ordenación do Territorio, Facultade de Ciencias do Mar, Campus Lagoas Marcosende, Universidad de Vigo, Vigo, Spain 
   - index: 2
     name: Universidad de Alcalá, Grupo de Ecología Forestal y Restauración (FORECO), Departamento de Ciencias de la Vida, Spain
   - index: 3
@@ -38,6 +38,11 @@ affiliations:
   - index: 6
     name: Estación Biológica de Doñana, Consejo Superior de Investigaciones Científicas, Spain
 ---
+
+
+date: 13 August 2017
+bibliography: paper.bib
+
 
 Correspondence:
 
@@ -121,8 +126,8 @@ Estimate the average organic carbon sequestration rate to the soil in a indicate
 # Availability
 
 The library is available xxxx. [Browse the source core](https://github.com/EcologyR/BlueCarbon/)
-
-[Library and tutorials](https://ecologyr.github.io/BlueCarbon/)
+To install it...
+The library and tutorials can be accessed [here](https://ecologyr.github.io/BlueCarbon/) and a workshop recording and a step-by-step tutorial walkthrough are available [here](https://www.youtube.com/watch?v=XCrrR3_MSHc&ab_channel=EcoinformaticaAEET).
 
 # Key References
 
@@ -134,6 +139,6 @@ Piñeiro-Juncal et al. (in prepp) Soil organic carbon preservation and decay tr
 
 # Acknowledgements
 
-The development of this software has been funded by Fondo Europeo de Desarrollo Regional (FEDER) and Consejería de Transformación Económica, Industria, Conocimiento y Universidades of Junta de Andalucía (proyecto US-1381388 led by Francisco Rodríguez Sánchez, Universidad de Sevilla). NPJ was supported by a Juan de la Cierva fellowship (JDC2022-048342-I). JA acknowledges funding from the CLIMB-FOREST Horizon Europe Project (No 101059888) that was funded by the European Union.
+The development of this software has been funded by Fondo Europeo de Desarrollo Regional (FEDER) and Consejería de Transformación Económica, Industria, Conocimiento y Universidades of Junta de Andalucía (proyecto US-1381388 led by Francisco Rodríguez Sánchez, Universidad de Sevilla). NPJ was supported by a Juan de la Cierva fellowship (JDC2022-048342-I, funded by  MCIN/AEI/10.13039/501100011033 and the European Union “NextGenerationEU”/PRTR”). JA acknowledges funding from the CLIMB-FOREST Horizon Europe Project (No 101059888) that was funded by the European Union.
 
 ![](images/68747470733a2f2f65636f6c6f6779722e6769746875622e696f2f776f726b73686f702f696d616765732f6c6f676f732e706e67.png)
