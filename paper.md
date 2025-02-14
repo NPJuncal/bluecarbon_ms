@@ -2,10 +2,11 @@
 title: "BlueCarbon R package: Estimation of Organic Carbon Stocks and Sequestration Rates From Soil Core Data"
 
 tags:
+  - R
+  - ecology
+  - climate change
 
-
-
-author:
+authors:
   - name: Nerea Piñeiro-Juncal
     orcid: 0000-0003-3767-1812
     affiliation: 1
@@ -20,56 +21,50 @@ author:
     affiliation: 4
   - name: Francisco Rodríguez-Sánchez
     orcid: 0000-0002-7981-1599
-    affiliation: "5, 6"
+    affiliation: 5
 
 
 affiliations:
-  
   - index: 1
-    name: Centro de Investigacions Mariñas da Universidade de Vigo. Departamento de Xeocencias Mariñas e Ordenación do Territorio, Facultade de Ciencias do Mar, Campus Lagoas Marcosende, Universidad de Vigo, Vigo, Spain 
+    name: Departamento de Xeocencias Mariñas e Ordenación do Territorio, Facultade de Ciencias do Mar, Campus Lagoas Marcosende, Universidad de Vigo, Vigo, Spain 
   - index: 2
     name: Universidad de Alcalá, Grupo de Ecología Forestal y Restauración (FORECO), Departamento de Ciencias de la Vida, Spain
   - index: 3
-    name:  
+    name: Affil3 
   - index: 4
-    name: 
+    name: Affil4
   - index: 5
     name: Departamento de Biología Vegetal y Ecología, Universidad de Sevilla, Spain
-  - index: 6
-    name: Estación Biológica de Doñana, Consejo Superior de Investigaciones Científicas, Spain
+
+
+date: 25 February 2025
+year: 2025
+# bibliography: paper.bib
+csl: apa.csl
+
+# output: github_document
+
+output: rticles::joss_article
+journal: JOSS
+citation_author: Piñeiro-Juncal et. al.
+
 ---
-
-
-date: 13 August 2017
-bibliography: paper.bib
-
 
 Correspondence:
 
-Nerea Piñeiro-Juncal, University of Vigo, Vigo, Spain. Email: [np.juncal\@gmail.com](mailto:np.juncal@gmail.com){.email}
+Nerea Piñeiro-Juncal, University of Vigo, Vigo, Spain. Email: [np.juncal@gmail.com](mailto:np.juncal@gmail.com){.email}
 
 # Summary
 
 *`BlueCarbon`* facilitate the estimation of organic carbon stocks and sequestration rates from soil/sediment cores from blue carbon ecosystems. It contains seven main functions to estimate the compaction of cores, mathematically correct core compaction, estimate sample thickness, estimate organic carbon content from organic matter content, estimate organic carbon stocks and sequestration rates and visualize the error of stock extrapolation.
 
-```{r setup, include=FALSE, cache=FALSE, message = FALSE}
-library("knitr")
-### Chunk options: see http://yihui.name/knitr/options/ ###
-## Text results
-opts_chunk$set(echo = TRUE, warning = TRUE, message = FALSE, out.width = "100%")
-## Code decoration
-opts_chunk$set(tidy = TRUE, comment = NA, highlight = TRUE)
-## Cache
-opts_chunk$set(cache = TRUE, cache.path = "output/cache/")
-## Plots
-opts_chunk$set(fig.path = "output/figures/", dpi = 300)
-```
+
 
 # Statement of Need
 
 Coastal blue carbon ecosystems have earn a large attention for their role as sinks of organic carbon. In the last decade, publications about blue carbon research have grown exponentially, including many studies reporting soil organic carbon stocks and sequestration rates (). Although there are many soil sampling strategies, estimation methodologies are fairly homogeneous, following the protocol published by the Blue Carbon initiative (). However, and although many blue carbon researchers work in R and it is becoming more comon to publish the code used, there is no R library with functions especifically for blue carbon estimations. This library aims to standardize and automate the main estimations to get soil/sediment blue carbon stocks and sequestration rates from raw field and laboratory data.
 
-# Desing
+# Design
 
 The BLueCarbon library contains seven main functions to deal with core compaction (estimate the compaction of cores and mathematically correct core compaction), transform laboratory data (estimate sample thickness and estimate organic carbon content from organic matter content) and estimate organic carbon stocks and sequestration rates (estimate organic carbon stocks and sequestration rates and visualize the error of stock extrapolation).
 
@@ -126,19 +121,22 @@ Estimate the average organic carbon sequestration rate to the soil in a indicate
 # Availability
 
 The library is available xxxx. [Browse the source core](https://github.com/EcologyR/BlueCarbon/)
-To install it...
-The library and tutorials can be accessed [here](https://ecologyr.github.io/BlueCarbon/) and a workshop recording and a step-by-step tutorial walkthrough are available [here](https://www.youtube.com/watch?v=XCrrR3_MSHc&ab_channel=EcoinformaticaAEET).
 
-# Key References
+[Library and tutorials](https://ecologyr.github.io/BlueCarbon/)
+
+
+
+# Acknowledgements
+
+The development of this software has been funded by Fondo Europeo de Desarrollo Regional (FEDER) and Consejería de Transformación Económica, Industria, Conocimiento y Universidades of Junta de Andalucía (proyecto US-1381388 led by Francisco Rodríguez Sánchez, Universidad de Sevilla). NPJ was supported by a Juan de la Cierva fellowship (JDC2022-048342-I). JA acknowledges funding from the CLIMB-FOREST Horizon Europe Project (No 101059888) that was funded by the European Union.
+
+
+
+
+# References
 
 Fourqureanet al. (2012) Seagrass ecosystems as a globally significant carbon stock. Nat. Geosci.5, 505–509. <https://doi.org/10.1038/ngeo1477>
 
 Maxwell et al. (2023) Global dataset of soil organic carbon in tidal marshes.Sci.Data 10, 1–14.<https://doi.org/10.1038/s41597-023-02633-x>
 
 Piñeiro-Juncal et al. (in prepp) Soil organic carbon preservation and decay trends in tidal marsh, mangrove and seagrass blue carbon ecosystems.
-
-# Acknowledgements
-
-The development of this software has been funded by Fondo Europeo de Desarrollo Regional (FEDER) and Consejería de Transformación Económica, Industria, Conocimiento y Universidades of Junta de Andalucía (proyecto US-1381388 led by Francisco Rodríguez Sánchez, Universidad de Sevilla). NPJ was supported by a Juan de la Cierva fellowship (JDC2022-048342-I, funded by  MCIN/AEI/10.13039/501100011033 and the European Union “NextGenerationEU”/PRTR”). JA acknowledges funding from the CLIMB-FOREST Horizon Europe Project (No 101059888) that was funded by the European Union.
-
-![](images/68747470733a2f2f65636f6c6f6779722e6769746875622e696f2f776f726b73686f702f696d616765732f6c6f676f732e706e67.png)
