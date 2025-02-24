@@ -42,7 +42,7 @@ affiliations:
     name: Departamento de Biología Vegetal y Ecología, Universidad de Sevilla, Spain
 
 
-date: 25 February 2025
+date: 24 February 2025
 year: 2025
 bibliography: paper.bib
 csl: apa.csl
@@ -92,7 +92,7 @@ There is a linear correlation between organic carbon and organic matter content.
 
 For cores where only selected samples were measured, it is necessary to assign a carbon density to the unmeasured sections before estimating the total stock. This function identifies gaps between samples and, if any are present, divides the space between the previous and next sample, ensuring continuous samples without gaps in the core (Fig. 3). The midpoint between two consecutive samples is estimated from the bottom of the previous sample to the top of the next sample, preventing the uneven distribution of gaps between samples with different thickness. The stock and sequestration rate estimation functions (estimate_oc_stock and estimate_seq_rate) already incorporate this function, so there is no need to run it separately.
 
-![Gap distribution between samples to estimate accumulated organic carbon mass.](images/estimate_h()-01.png){width="268"}
+![Gap distribution between samples to estimate accumulated organic carbon mass.](images/estimate_h-01.png){width="268"}
 
 #### ***estimate_oc_stock*** **- Organic carbon stock estimation**
 
