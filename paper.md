@@ -14,17 +14,17 @@ authors:
     orcid: 0000-0003-3767-1812
     affiliation: 1
   - name: Julen Astigarraga
-    orcid: 0000-0001-9520-3713
+    orcid: 0000-0001-9520-3713    
     affiliation: 2
   - name: Valentina Costa
     orcid: 0000-0002-1513-0284
-    affiliation: 3
+    affiliation: 3, 4, 5
   - name: Márcio Martins
     orcid: 0000-0002-6969-2215
-    affiliation: 4
+    affiliation: 6
   - name: Francisco Rodríguez-Sánchez
     orcid: 0000-0002-7981-1599
-    affiliation: 5
+    affiliation: 7
 
 
 
@@ -36,8 +36,12 @@ affiliations:
   - index: 3
     name: Stazione Zoologica Anton Dohrn – CRIMAC, Calabria Marine Centre, Department of Integrative Marine Ecology, Amendolara (CS), Italy
   - index: 4
-    name: Centre of Marine Sciences (CCMAR/CIMAR LA), Campus de Gambelas, Universidade do Algarve, 8005-139 Faro, Portugal
+    name: National Institute of Oceanography and Applied Geophysics – OGS, Italy
   - index: 5
+    name: NBFC, National Biodiversity Future Center, Palermo, Italy
+  - index: 6
+    name: Centre of Marine Sciences (CCMAR/CIMAR LA), Campus de Gambelas, Universidade do Algarve, 8005-139 Faro, Portugal
+  - index: 7
     name: Departamento de Biología Vegetal y Ecología, Universidad de Sevilla, Spain
 
 
@@ -69,13 +73,13 @@ Coastal blue carbon ecosystems have earned significant attention for their role 
 
 *`BlueCarbon`* contains seven main functions (Fig. 1) to deal with core compaction (to estimate and mathematically correct core compaction), transform laboratory data (to estimate sample thickness and to estimate organic carbon content from organic matter content) and estimate organic carbon stocks and sequestration rates (estimate organic carbon stocks, sequestration rates, and visualizing the error in stock extrapolation).
 
-![Blue Carbon package workflow](images/BC_workflow-02.png)
+![Blue Carbon package workflow](images/bcworkflow.png){width="488"}
 
 #### ***estimate_compaction*** **- Estimate Core Compaction**
 
 Sampling soil cores by manual percussion often results in the compaction of the material retrieved. This function estimates the percentage of compaction using measurements taken before and after inserting the corer tube (Fig. 2).
 
-![Soil compaction from field sampling](images/compaction-02.png){width="437"}
+![Soil compaction from field sampling](images/compaction-02.png){width="288"}
 
 #### ***decompact*** **- Calculate sediment properties after decompaction**
 
@@ -89,13 +93,13 @@ There is a linear correlation between organic carbon and organic matter content.
 
 For cores where only selected samples were measured, it is necessary to assign a carbon density to the unmeasured sections before estimating the total stock. This function identifies gaps between samples and, if any are present, divides the space between the previous and next sample, ensuring continuous samples without gaps in the core (Fig. 3). The midpoint between two consecutive samples is estimated from the bottom of the previous sample to the top of the next sample, preventing the uneven distribution of gaps between samples with different thickness. The stock and sequestration rate estimation functions (estimate_oc_stock and estimate_seq_rate) already incorporate this function, so there is no need to run it separately.
 
-![Gap distribution between samples to estimate accumulated organic carbon mass.](images/estimate_h-01.png){width="350"}
+![Gap distribution between samples to estimate accumulated organic carbon mass.](images/estimate_h-01.png){width="309"}
 
 #### ***estimate_oc_stock*** **- Organic carbon stock estimation**
 
 Estimates carbon stocks from soil core data down to a specified depth, with 100 as the default. If the core does not reach the desired depth, the function extrapolates the stock using a linear model based on the relationship between accumulated organic carbon mass and depth. In this model, accumulated organic carbon mass (stock) is the target variable and depth the explanatory variable (lm(accumulated organic carbon mass \~ depth)).
 
-![OC stock estimation diagram](images/estimate_stock-01.png){width="378"}
+![OC stock estimation diagram](images/estimate_stock-01.png){width="267"}
 
 #### ***test_extrapolation*** **- Visualize the error of stock extrapolation**
 
