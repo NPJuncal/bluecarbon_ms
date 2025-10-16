@@ -35,7 +35,6 @@ affiliations:
     name: Universidad de Alcalá, Grupo de Ecología Forestal y Restauración (FORECO), Departamento de Ciencias de la Vida, Spain
   - index: 3
     name: Stazione Zoologica Anton Dohrn – CRIMAC, Calabria Marine Centre, Department of Integrative Marine Ecology, Amendolara (CS), Italy
-
   - index: 4
     name: Centre of Marine Sciences (CCMAR/CIMAR LA), Campus de Gambelas, Universidade do Algarve, 8005-139 Faro, Portugal
   - index: 5
@@ -62,8 +61,6 @@ Nerea Piñeiro-Juncal, University of Vigo, Vigo, Spain. Email: [np.juncal\@gmail
 
 *`BlueCarbon`* facilitates the estimation of organic carbon stocks and sequestration rates from soil and sediment cores in depositional environments. It includes seven main functions to (1) estimate core compaction, (2) correct core compaction, (3) estimate sample thickness, (4) estimate organic carbon content from organic matter content, (5) estimate organic carbon stocks and (6) sequestration rates, and (7) visualize the error in stock extrapolation.
 
-
-
 # Statement of Need
 
 Coastal blue carbon ecosystems have earned significant attention for their role as organic carbon sinks. Over the past decade, publications on blue carbon research have grown exponentially [@quevedo_2023]. While soil samples can be collected by different methods, estimation methodologies remain fairly homogeneous, following the protocols published by the Blue Carbon initiative [@Howard_2014]. Despite the increasing use of R among blue carbon researchers, there are no specialized R packages dedicated to these calculations. *`BlueCarbon`* aims to standardize and automate the main estimations for calculating  soil and sediment blue carbon stocks and sequestration rates from raw field and laboratory data.
@@ -78,7 +75,7 @@ Coastal blue carbon ecosystems have earned significant attention for their role 
 
 Sampling soil cores by manual percussion often results in the compaction of the material retrieved. This function estimates the percentage of compaction using measurements taken before and after inserting the corer tube (Fig. 2).
 
-![Soil compaction from field sampling](images/compaction-02.png){width="337"}
+![Soil compaction from field sampling](images/compaction-02.png){width="437"}
 
 #### ***decompact*** **- Calculate sediment properties after decompaction**
 
@@ -92,13 +89,13 @@ There is a linear correlation between organic carbon and organic matter content.
 
 For cores where only selected samples were measured, it is necessary to assign a carbon density to the unmeasured sections before estimating the total stock. This function identifies gaps between samples and, if any are present, divides the space between the previous and next sample, ensuring continuous samples without gaps in the core (Fig. 3). The midpoint between two consecutive samples is estimated from the bottom of the previous sample to the top of the next sample, preventing the uneven distribution of gaps between samples with different thickness. The stock and sequestration rate estimation functions (estimate_oc_stock and estimate_seq_rate) already incorporate this function, so there is no need to run it separately.
 
-![Gap distribution between samples to estimate accumulated organic carbon mass.](images/estimate_h-01.png){width="268"}
+![Gap distribution between samples to estimate accumulated organic carbon mass.](images/estimate_h-01.png){width="350"}
 
 #### ***estimate_oc_stock*** **- Organic carbon stock estimation**
 
 Estimates carbon stocks from soil core data down to a specified depth, with 100 as the default. If the core does not reach the desired depth, the function extrapolates the stock using a linear model based on the relationship between accumulated organic carbon mass and depth. In this model, accumulated organic carbon mass (stock) is the target variable and depth the explanatory variable (lm(accumulated organic carbon mass \~ depth)).
 
-![OC stock estimation diagram](images/estimate_stock-01.png){width="312"}
+![OC stock estimation diagram](images/estimate_stock-01.png){width="378"}
 
 #### ***test_extrapolation*** **- Visualize the error of stock extrapolation**
 
@@ -114,6 +111,6 @@ BlueCarbon is available in [CRAN](https://cran.r-project.org/package=BlueCarbon)
 
 # Acknowledgements
 
-The development of this software has been funded by Fondo Europeo de Desarrollo Regional (FEDER) and Consejería de Transformación Económica, Industria, Conocimiento y Universidades of Junta de Andalucía (project US-1381388 led by Francisco Rodríguez Sánchez, Universidad de Sevilla). NPJ was supported by a Juan de la Cierva fellowship (JDC2022-048342-I, MCIN/AEI/10.13039/501100011033, European Union “NextGenerationEU”/PRTR”). JA acknowledges funding from the CLIMB-FOREST Horizon Europe Project (No 101059888) funded by the European Union. FRS was supported by VI PPIT-US from Universidad de Sevilla. MM was supported by a FCT PhD grant (https://doi.org/10.54499/2020.06996.BD).
+The development of this software has been funded by Fondo Europeo de Desarrollo Regional (FEDER) and Consejería de Transformación Económica, Industria, Conocimiento y Universidades of Junta de Andalucía (project US-1381388 led by Francisco Rodríguez Sánchez, Universidad de Sevilla). NPJ was supported by a Juan de la Cierva fellowship (JDC2022-048342-I, MCIN/AEI/10.13039/501100011033, European Union “NextGenerationEU”/PRTR”). JA acknowledges funding from the CLIMB-FOREST Horizon Europe Project (No 101059888) funded by the European Union. FRS was supported by VI PPIT-US from Universidad de Sevilla. MM was supported by a FCT PhD grant (<https://doi.org/10.54499/2020.06996.BD>).
 
 # References
