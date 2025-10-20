@@ -15,16 +15,16 @@ authors:
     affiliation: 1
   - name: Julen Astigarraga
     orcid: 0000-0001-9520-3713    
-    affiliation: 2
+    affiliation: 2, 3
   - name: Valentina Costa
     orcid: 0000-0002-1513-0284
-    affiliation: 3, 4, 5
+    affiliation: 4, 5, 6
   - name: Márcio Martins
     orcid: 0000-0002-6969-2215
-    affiliation: 6
+    affiliation: 7
   - name: Francisco Rodríguez-Sánchez
     orcid: 0000-0002-7981-1599
-    affiliation: 7
+    affiliation: 8
 
 
 
@@ -34,14 +34,16 @@ affiliations:
   - index: 2
     name: Universidad de Alcalá, Grupo de Ecología Forestal y Restauración (FORECO), Departamento de Ciencias de la Vida, Spain
   - index: 3
-    name: Stazione Zoologica Anton Dohrn – CRIMAC, Calabria Marine Centre, Department of Integrative Marine Ecology, Amendolara (CS), Italy
+    name: Department of Physical Geography and Ecosystem Science, Lund University, Lund, Sweden
   - index: 4
-    name: National Institute of Oceanography and Applied Geophysics – OGS, Italy
+    name: Stazione Zoologica Anton Dohrn – CRIMAC, Calabria Marine Centre, Department of Integrative Marine Ecology, Amendolara (CS), Italy
   - index: 5
-    name: NBFC, National Biodiversity Future Center, Palermo, Italy
+    name: National Institute of Oceanography and Applied Geophysics – OGS, Italy
   - index: 6
-    name: Centre of Marine Sciences (CCMAR/CIMAR LA), Campus de Gambelas, Universidade do Algarve, 8005-139 Faro, Portugal
+    name: NBFC, National Biodiversity Future Center, Palermo, Italy
   - index: 7
+    name: Centro de Ciências do Mar do Algarve (CCMAR/CIMAR LA), Campus de Gambelas, Universidade do Algarve, 8005-139 Faro, Portugal
+  - index: 8
     name: Departamento de Biología Vegetal y Ecología, Universidad de Sevilla, Spain
 
 
